@@ -1,5 +1,4 @@
 import { component$ } from '@builder.io/qwik';
-import logo from '/image/logo.jpg';
 import { Link, useLocation } from '@builder.io/qwik-city';
 export default component$(() => {
   const sections = [
@@ -12,7 +11,7 @@ export default component$(() => {
   } = useLocation();
   return (
     <header class='bg-black flex items-center justify-between'>
-      <img src={logo} width={200} height={200} alt='' />
+      <img src={'/image/logo.jpg'} width={200} height={200} alt='' />
       <ul class='flex gap-10 last:mr-10'>
         {sections.map(({ url, name }, i) => {
           return (

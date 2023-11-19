@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import ListItems from '~/components/common/ListItems';
-import person from '/image/image.png';
+
 export default component$(() => {
   return (
     <section class='flex items-center flex-col '>
@@ -11,7 +11,7 @@ export default component$(() => {
       <div class='flex gap-2 items-start  flex-wrap container justify-center'>
         <figure class='w-[40%]  h-96 sm:sticky top-0 min-w-[304px]'>
           <img
-            src={person}
+            src={'/image/image.png'}
             alt='dsdf'
             height={0}
             width={0}
